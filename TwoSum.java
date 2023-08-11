@@ -1,3 +1,5 @@
+
+//https://leetcode.com/problems/two-sum/
 package Arrays1DAnd2D;
 
 import java.util.Arrays;
@@ -20,6 +22,7 @@ public class TwoSum {
         }
         return new int[]{-1,-1};
     }
+    //To reduce time complexity from O(n^2) to O(n) use Hashmap
     static int[] twoSum1(int[] nums, int target){
         HashMap<Integer,Integer>map=new HashMap<>();
         for (int i = 0; i < nums.length ; i++) {
